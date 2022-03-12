@@ -2,7 +2,7 @@ CC=g++
 LDFLAGS=-std=c++11 -O3 -lm
 SOURCES=*.cpp
 OBJECTS=$(SOURCES:.c=.o)
-EXECUTABLE=m11007301
+EXECUTABLE=Global-Routing
 INCLUDES=*.h
 
 all: $(SOURCES) ./$(EXECUTABLE)
