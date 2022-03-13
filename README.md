@@ -17,12 +17,12 @@ The file format for the global routing is illustrated, with comments in italics 
 #### Output
 All the routes in the output could only be horizontal lines and vertical lines. For example (18, 61)-(19, 62) is not acceptable, because it is diagonal. Remember that each route could be different either in the x or y location only, and the difference must be 1. The output file format is as follows:
 
-> [net_id] [# of routes, k]
-> [x11] [y11] [x12] [y12]
-> [x21] [y21] [x22] [y22]
-> ...
-> [x(k-1)1] [y(k-1)1] [xk2] [yk2]
-> //repeat for the appropriate number of nets
+> [net_id] [# of routes, k]  
+> [x11] [y11] [x12] [y12]  
+> [x21] [y21] [x22] [y22]  
+> ...  
+> [x(k-1)1] [y(k-1)1] [xk2] [yk2]  
+> //repeat for the appropriate number of nets  
 
 Note that for a certain net, x11, y11, xk2 and yk2 must be the same as xs, ys, xt and yt in the input file respectively. Also, for any i, xi2 and yi2 must be the same as x(i+1)1 and y(i+1)1 respectively.
 
